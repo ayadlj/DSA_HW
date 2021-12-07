@@ -1,0 +1,5 @@
+F:\Personal\FlightTicketManagementSystem\FlightTicketManagementSystem.Model\bin\Debug\FlightTicketManagementSystem.Model.dll
+F:\Personal\FlightTicketManagementSystem\FlightTicketManagementSystem.Model\bin\Debug\FlightTicketManagementSystem.Model.pdb
+F:\Personal\FlightTicketManagementSystem\FlightTicketManagementSystem.Model\obj\Debug\FlightTicketManagementSystem.Model.csproj.CoreCompileInputs.cache
+F:\Personal\FlightTicketManagementSystem\FlightTicketManagementSystem.Model\obj\Debug\FlightTicketManagementSystem.Model.dll
+F:\Personal\FlightTicketManagementSystem\FlightTicketManagementSystem.Model\obj\Debug\FlightTicketManagementSystem.Model.pdb

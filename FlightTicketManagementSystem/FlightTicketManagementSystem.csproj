@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33FD1E5A-116B-4F0C-BB53-1A551DA7635D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FlightTicketManagementSystem</RootNamespace>
+    <AssemblyName>FlightTicketManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booking.cs" />
+    <Compile Include="FrmAddFight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddFight.Designer.cs">
+      <DependentUpon>FrmAddFight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddPassenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddPassenger.Designer.cs">
+      <DependentUpon>FrmAddPassenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddService.Designer.cs">
+      <DependentUpon>FrmAddService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAvaliableFlights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAvaliableFlights.Designer.cs">
+      <DependentUpon>FrmAvaliableFlights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagement.Designer.cs">
+      <DependentUpon>FrmManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteFlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteFlight.Designer.cs">
+      <DependentUpon>FrmDeleteFlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryFight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryFight.Designer.cs">
+      <DependentUpon>FrmQueryFight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeats.Designer.cs">
+      <DependentUpon>FrmSeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheduleFlight.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="Toolkit.cs" />
+    <EmbeddedResource Include="FrmAddFight.resx">
+      <DependentUpon>FrmAddFight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddPassenger.resx">
+      <DependentUpon>FrmAddPassenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddService.resx">
+      <DependentUpon>FrmAddService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAvaliableFlights.resx">
+      <DependentUpon>FrmAvaliableFlights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagement.resx">
+      <DependentUpon>FrmManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteFlight.resx">
+      <DependentUpon>FrmDeleteFlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryFight.resx">
+      <DependentUpon>FrmQueryFight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeats.resx">
+      <DependentUpon>FrmSeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlightTicketManagementSystem.Model\FlightTicketManagementSystem.Model.csproj">
+      <Project>{dd3fe16c-10b1-442f-895c-7ade944eadd8}</Project>
+      <Name>FlightTicketManagementSystem.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
