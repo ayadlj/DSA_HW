@@ -6,7 +6,7 @@ using FlightTicketManagementSystem.Model;
 
 namespace FlightTicketManagementSystem
 {
-    public class BookFlight
+    public class BookFlight // For booking flights
     {
         static int BookFlightId = 0;
         ScheduleFlight F1;
